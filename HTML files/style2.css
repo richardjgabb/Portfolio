@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+    margin:0;
+}
+
+header {
+    background-color: #e8e82c;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e8e82c;
+    margin-top: 0;
+}
+
+div {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rednav {
+    margin: 10px 10px;
+}
+
+#left {
+    width: 50%;
+}
+
+#right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.redboxes {
+    background-color: red;
+    width:100px;
+    height:100px;
+}
+
+.blueboxes {
+    background-color: blue;
+    width:100px;
+    height:100px;
+}

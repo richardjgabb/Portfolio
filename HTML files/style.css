@@ -1,0 +1,80 @@
+body {
+
+    background-color: #c5c5ef;
+    text-align:center;
+}
+
+.textbox {
+    display:inline-block;
+    color: green;
+    background-color: #e8e88e;
+}
+.label {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline yellow;
+}
+h1 {
+    color: black;
+    font-family: "Roboto Thin";
+    display: block;
+    text-decoration: underline overline wavy;
+}
+
+table {
+    font-style: italic;
+    display: block;
+    width: 40rem;
+    margin: 0 auto;
+
+}
+
+.box {
+    background-color:red;
+    height: 60rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-around;
+    padding: 50px 50px;
+}
+td {
+    border: 2px solid black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+th {
+    background-color: black;
+    color: red;
+}
+tr {
+    margin: 0;
+    padding: 0;
+}
+.vanwilder {
+    background-color: #415ebb;
+    color: white;
+}
+
+.stepbrothers {
+    background-color: burlywood;
+}
+
+.anchorman {
+    background-color: darkslategray;
+    color: white;
+}
+
+.spinaltap {
+    background-color: #78c7c4;
+}
+
+#dogpic {
+    height: 40rem;
+    border: dotted black;
+
+}
+
