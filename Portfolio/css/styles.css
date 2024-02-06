@@ -8,6 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
 .underlined {
     text-decoration: underline 15%;
     text-decoration-color: rgba(65,224,56,0.69);
@@ -18,10 +19,14 @@ body {
     border: none;
     color: white;
     font-size: 5vh;
+    padding-top: 0.7rem;
 }
 
 .navBar {
-    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
     height: 5vh;
 }
 
@@ -113,10 +118,62 @@ body {
 
 .projectsWheel {
     display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 #homeHighlight {
     visibility: visible;
+}
+
+.aboutMeIconLinks {
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
+    margin-top: 0;
+    gap: 0.5rem;
+}
+
+.aboutMeIcons {
+    background-color: rgba(128, 128, 128, 0.43);
+    min-height: 1rem;
+    max-height: 2rem;
+    min-width: 1rem;
+    max-width: 2rem;
+    margin-top: 0;
+    padding-top: 0.3rem;
+    border-radius: 50%;
+    border: none;
+    font-size: 12pt;
+    color: white;
+}
+
+
+
+.aboutMeMobileCard {
+    display: flex;
+    align-items: center;
+    width:92vw;
+    height: 20vh;
+    margin-inline: 3vw;
+    margin-bottom: 6vh;
+
+}
+
+.mobileCardImage {
+    height: 100%;
+}
+
+.mobileCardText {
+    font-size: 0.7rem;
+    font-weight: lighter;
+    margin-inline: 2vw;
+}
+
+.aboutMeIcons:hover {
+    rotate: 20deg;
+    font-size: 16pt;
+    background: none;
 }
 
 .projectsWheel button {
@@ -127,6 +184,7 @@ body {
     font-size: 2rem;
     margin: 0 2rem
 }
+
 
 .projectsWheel button:hover {
     color: white;
@@ -173,11 +231,8 @@ h2 {
     color: white;
 }
 
-#aboutButton:hover {
-    #aboutHighlight {
-        visibility: visible;
-    }
-}
+
+
 
 .socialsIcons:hover {
     rotate: 20deg;
@@ -203,7 +258,12 @@ h2 {
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
+
+    #switchOrder {
+        flex-direction: row-reverse;
+    }
+
     .mainSection {
         align-items: flex-start;
         margin-left: 10vw;
@@ -218,4 +278,6 @@ h2 {
     h1, h2 {
         margin-left: 0;
     }
+
+}
 }
