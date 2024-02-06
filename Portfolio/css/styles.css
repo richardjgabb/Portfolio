@@ -269,6 +269,61 @@ h2 {
     font-size: 42pt;
 }
 
+.contactMainDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.contactCard {
+    background-color: rgba(68, 68, 68, 0.29);
+    display: flex;
+    flex-grow: 0;
+    padding: 1rem 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 18rem;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo h3, h4 {
+    margin: 0.8rem 1rem;
+    padding: 0;
+}
+
+.contactInfo a {
+    text-decoration: none;
+    color: white;
+}
+
+#clickHere::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: rgba(91, 255, 142, 0.65);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+#clickHere:hover::after {
+    width: 40%;
+    left: 0;
+}
+
+.socialLinkIcons {
+    display: flex;
+    flex-grow: 0;
+    gap: 0.3rem;
+    margin-left: 1rem;
+}
+
 
 @media screen and (min-width: 900px) {
 
