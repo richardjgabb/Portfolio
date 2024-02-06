@@ -11,7 +11,7 @@ body {
 
 .underlined {
     text-decoration: underline 15%;
-    text-decoration-color: rgba(65,224,56,0.69);
+    text-decoration-color: rgba(91, 255, 142, 0.65);
 }
 
 .hamburgerButton {
@@ -19,6 +19,8 @@ body {
     border: none;
     color: white;
     font-size: 5vh;
+    max-width: 3rem;
+    margin-right: 1rem;
     padding-top: 0.7rem;
 }
 
@@ -90,7 +92,9 @@ body {
 }
 
 .pageText {
-    font-weight: 300;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+    font-size: 0.9rem;
     text-align: center;
     margin: 10vh 10vw;
 }
@@ -101,25 +105,23 @@ body {
 
 .strike {
     color: rgba(0, 0, 0, 0);
-    text-decoration: overline 15% rgba(65, 224, 56, 0.27);
+    text-decoration: overline 15% rgba(91, 255, 142, 0.65);
     margin: 1rem 4rem;
 }
 
 .largeCard {
-    display: flex;
-    height: 30rem;
-    width: 25rem;
+    height: 40vh;
+    object-fit: cover;
+    max-width: 50vw;
     margin-top: 1rem;
-}
-
-.largeCard img {
-    object-fit: contain;
+    overflow: clip;
 }
 
 .projectsWheel {
     display: flex;
     width: 100%;
     justify-content: center;
+    align-items: center;
 }
 
 #homeHighlight {
@@ -136,12 +138,10 @@ body {
 
 .aboutMeIcons {
     background-color: rgba(128, 128, 128, 0.43);
-    min-height: 1rem;
-    max-height: 2rem;
-    min-width: 1rem;
-    max-width: 2rem;
+    height: 2rem;
+    width: 2rem;
     margin-top: 0;
-    padding-top: 0.3rem;
+    padding-top: max(0.3rem);
     border-radius: 50%;
     border: none;
     font-size: 12pt;
@@ -162,17 +162,18 @@ body {
 
 .mobileCardImage {
     height: 100%;
+    max-width: 50vw;
 }
 
 .mobileCardText {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: lighter;
     margin-inline: 2vw;
 }
 
 .aboutMeIcons:hover {
     rotate: 20deg;
-    font-size: 16pt;
+    font-size: 18pt;
     background: none;
 }
 
@@ -181,8 +182,9 @@ body {
     color: #969696;
     overflow: visible;
     border: none;
+    text-align: center;
     font-size: 2rem;
-    margin: 0 2rem
+    width: 4rem;
 }
 
 
@@ -191,8 +193,22 @@ body {
     font-size: 3rem;
 }
 
-.mobileNavButton:hover {
-    text-decoration: underline 15% rgba(65, 224, 56, 0.27);
+/*.mobileNavButton:hover {*/
+/*    text-decoration: underline 15% rgba(65, 224, 56, 0.27);*/
+/*}*/
+
+.mobileNavButton::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: rgba(91, 255, 142, 0.65);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.mobileNavButton:hover::after {
+    width: 70%;
+    left: 0;
 }
 
 h1 {
@@ -220,18 +236,14 @@ h2 {
 
 .socialsIcons {
     background-color: rgba(128, 128, 128, 0.43);
-    min-height: 3rem;
-    max-height: 4rem;
-    min-width: 3rem;
-    max-width: 4rem;
-    padding-top: 0.4rem;
+    height: 3rem;
+    width: 3rem;
+    padding: 0.35rem 0 0 0.1rem;
     border-radius: 50%;
     border: none;
     font-size: 22pt;
     color: white;
 }
-
-
 
 
 .socialsIcons:hover {
@@ -254,7 +266,7 @@ h2 {
 }
 
 .hamburgerButton:hover {
-    font-size: 40pt;
+    font-size: 42pt;
 }
 
 
@@ -278,6 +290,7 @@ h2 {
     h1, h2 {
         margin-left: 0;
     }
-
+    .mobileCardText {
+        font-size: 0.9rem;
 }
 }
