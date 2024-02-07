@@ -1,0 +1,41 @@
+.homeNav {
+    display: flex;
+    margin-top: 3vh;
+    width: 100%;
+    max-height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeNavInnerDiv {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    justify-content: space-evenly;
+}
+
+.homeNavInnerDiv#left {
+    text-align: right;
+}
+
+.homeNavLinks {
+    display: flex;
+}
+
+.homeNavImageDiv {
+    border: black solid;
+    border-radius: 50%;
+    width: clamp(120px, 10vw, 180px);
+    height: clamp(120px, 10vw, 180px);
+    min-height: 30px;
+}
+
+a {
+    padding: 1em 2em;
+    font-size: 1.4em;
+}
+
+
+hr{
+    width: 100%;
+}
