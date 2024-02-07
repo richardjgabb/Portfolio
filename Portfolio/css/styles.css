@@ -17,6 +17,14 @@ body {
     align-items: center;
 }
 
+.homeNavImageDiv {
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.navImage{
+    width: 100%;
+}
 .homeNavInnerDiv {
     display: flex;
     flex-direction: column;
@@ -338,15 +346,13 @@ h2 {
     background-color: rgba(68, 68, 68, 0.29);
     border-radius: 7%;
     display: flex;
-    flex-grow: 1;
     padding: 5% 5% 3% 5%;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2%;
-    min-width: 100px;
-    max-width: 10em;
-    height: 4em;
+    width: 140px;
+    max-height: 3em;
 }
 
 .contactCard button {
@@ -386,12 +392,12 @@ input::placeholder {
 .contactInfo h3 {
     margin: 0 0 0 5%;
     width: 100%;
-    font-size: 1em;
+    font-size: 0.8em;
     padding: 0;
 }
 
 .contactInfo h4 {
-    font-size: 0.9em;
+    font-size: 0.7em;
     margin: 7% 0 0 5%;
     padding: 0;
 }
