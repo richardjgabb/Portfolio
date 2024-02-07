@@ -3,36 +3,42 @@
     margin-top: 3vh;
     width: 100%;
     max-height: 15vh;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.navBarIconLinks {
+    display: flex;
+    align-items: center;
+}
+
+
+.navBarSocialsIcons {
+    background-color: rgba(128, 128, 128, 0.43);
+    height: clamp(1rem, 2rem, 3rem);
+    width: clamp(1rem, 2rem, 3rem);
+    padding: 0.2rem 0 0 0;
+    border-radius: 50%;
+    border: none;
+    font-size: clamp(12pt, 12pt, 18pt);
+    color: #ffffff;
 }
 
 .homeNavInnerDiv {
     display: flex;
+    margin-right: 3vw;
     flex-direction: column;
-    width: 35vw;
-    justify-content: space-evenly;
-}
-
-.homeNavInnerDiv#left {
-    text-align: right;
+    width: auto;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .homeNavLinks {
     display: flex;
 }
-
-.homeNavImageDiv {
-    border: black solid;
-    border-radius: 50%;
-    width: clamp(120px, 10vw, 180px);
-    height: clamp(120px, 10vw, 180px);
-    min-height: 30px;
-}
-
 a {
-    padding: 1em 2em;
-    font-size: 1.4em;
+    padding: 1em 1em;
+    font-size: 1.5em;
 }
 
 
