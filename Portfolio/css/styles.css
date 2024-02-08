@@ -203,17 +203,16 @@ hr {
 }
 
 .largeCard {
-    height: 40vh;
+    height: clamp(150px, 40vw, 300px);
     object-fit: cover;
-    width: 50vw;
-    max-width: 450px;
+    width: clamp(150px, 40vw, 300px);
     margin-top: 1rem;
     overflow: clip;
 }
 
 .projectsWheel {
     display: flex;
-    width: 100%;
+    width: 80vw;
     justify-content: center;
     align-items: center;
 }
@@ -555,5 +554,13 @@ input::placeholder {
     }
     .mobileCardImage {
         width: clamp(50px, 10vw, 80px);
+    }
+
+    .aboutMeSection.projects {
+        flex-direction: row;
+    }
+
+    .pageText {
+        margin-left: 3%;
     }
 }
