@@ -2,7 +2,8 @@ body {
     background-image: url("../images/Untitled design.png");
     background-size: cover;
     background-repeat: repeat;
-    background-position: right;
+    background-position: 700px;
+    background-origin: ;
     color: rgba(222, 222, 222, 0.93);
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -178,11 +179,12 @@ hr {
 }
 
 .pageText {
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: 0.05rem;
     font-size: 0.7em;
     text-align: center;
     margin: 6vh 10vw;
+    color: rgba(222, 222, 222, 0.93);
 }
 
 @media screen and (min-width: 650px) {
@@ -539,21 +541,26 @@ input::placeholder {
     .aboutMeMobileCard.aboutMePage {
         align-items: center;
         height: 100%;
-        width: 60px;
+        width: clamp(75px, 15vw, 125px);
     }
     .contactCard.aboutMePage {
         flex-direction: column;
         max-height: none;
+        height:clamp(50px, 20vh, 250px);
         padding: 3%;
-        height: fit-content;
     }
     .languageIconContainer {
         flex-wrap: wrap;
+        font-size: clamp(10pt, 3vw, 16pt);
         height: fit-content;
         justify-content: center;
     }
     .mobileCardImage {
-        width: clamp(50px, 10vw, 80px);
+        width: clamp(50px, 20vw, 150px);
+    }
+
+    h1.overlined.strike {
+        margin-bottom: 0;
     }
 
     .aboutMeSection.projects {
@@ -562,5 +569,15 @@ input::placeholder {
 
     .pageText {
         margin-left: 3%;
+    }
+
+    body.projects {
+        background-image: url("../images/projects_backgroundpng.png");
+        background-position: -50px;
+    }
+
+    body {
+        background-image: url("../images/DesktopBackground.png");
+        background-position: center;
     }
 }
