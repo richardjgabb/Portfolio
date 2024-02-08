@@ -97,34 +97,9 @@ hr {
     padding: 0.3rem 0 0 0.03rem;
     font-size: clamp(10pt, 5vw, 28pt);
 }
-
-.linkedIn {
-    margin-left: 0;
-}
-
 .underlined {
     text-decoration: underline 15%;
     text-decoration-color: rgba(91, 255, 142, 0.65);
-}
-
-.navBar {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    height: 5vh;
-}
-
-.exitBar {
-    text-align: right;
-    display: none;
-}
-
-.exitButton {
-    background: none;
-    color: rgba(222, 222, 222, 0.93);
-    border: none;
 }
 
 .desktopNavBar {
@@ -134,14 +109,6 @@ hr {
     margin-left: 3vw;
     flex-grow: 0;
     padding: 0;
-}
-
-.fullMobileNav {
-    display: none;
-    flex-direction: column;
-    border: solid thin rgba(222, 222, 222, 0.93);
-    min-height: 90vw;
-    background: none;
 }
 
 .aboutMeSection {
@@ -205,7 +172,7 @@ hr {
 
 .largeCard {
     height: clamp(150px, 40vw, 300px);
-    object-fit: cover;
+    object-fit: contain;
     width: clamp(150px, 40vw, 300px);
     margin-top: 1rem;
     border-radius: 7%;
@@ -470,10 +437,6 @@ input::placeholder {
     width: 100%;
     font-size: 0.8em;
     padding: 0;
-}
-
-#subjectForm {
-    border-radius: 0.5em;
 }
 
 .contactInfo h4 {
