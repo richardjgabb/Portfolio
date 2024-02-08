@@ -1,12 +1,11 @@
 body {
-    background-image: url("../images/Untitled design.png");
+    background-image: url("../images/MobileBackground.jpg");
     background-size: cover;
     background-repeat: repeat;
-    background-position: 700px;
-    background-origin: ;
     color: rgba(222, 222, 222, 0.93);
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
 }
 
 .homeNav {
@@ -209,6 +208,7 @@ hr {
     object-fit: cover;
     width: clamp(150px, 40vw, 300px);
     margin-top: 1rem;
+    border-radius: 7%;
     overflow: clip;
 }
 
@@ -577,7 +577,7 @@ input::placeholder {
     }
 
     body {
-        background-image: url("../images/DesktopBackground.png");
+        background-image: url("../images/DesktopBackground.jpg");
         background-position: center;
     }
 }
