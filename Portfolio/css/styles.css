@@ -199,7 +199,7 @@ hr {
 .strike {
     color: rgba(0, 0, 0, 0);
     text-decoration: overline 15% rgba(91, 255, 142, 0.65);
-    margin: 1rem 4rem;
+    margin: 1vh 4rem;
 }
 
 .largeCard {
@@ -247,28 +247,24 @@ hr {
 .aboutMeMobileCard {
     display: flex;
     align-items: center;
-    width:92vw;
-    height: clamp(150px, 30vh, 200px);
-    margin-inline: 5vw;
-    margin-bottom: 6vh;
+    justify-content: center;
+    width:clamp(75vw, 75vw, 90vw);
+    height: clamp(100px, 18vh, 300px);
+    margin: 0 3vw;
 
-}
-
-
-.mobileCardImage.switch {
-    border-radius: 0 80%;
 }
 
 .mobileCardImage {
-    max-height: 100%;
-    min-width: 40%;
-    border-radius: 80% 0;
-    max-width: 50vw;
+    max-height: 90%;
+    width: clamp(15vw, 30vw, 25vw);
+    object-fit: cover;
+    border-radius: 5%;
 }
 
 
 .mobileCardText {
-    font-size: clamp(4pt, 1.4vw, 15pt);
+    font-size: clamp(7pt, 2vw, 16pt);
+    width: clamp(60vw, 60vw, 65vw);
     font-weight: lighter;
     margin-inline: 5vw;
 }
@@ -342,6 +338,43 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2vw;
+}
+
+.skillsHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+#skillsH2 {
+    margin-left: 1vw;
+}
+
+h5 {
+    font-size: clamp(8pt, 8vw, 20pt);
+    margin:0;
+}
+
+.languageIconContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    align-items: center;
+    height: 100%;
+}
+
+#contactUnderline {
+    margin:0.5em 2vw 0 2.5em;
+    color: rgba(0, 0, 0, 0);
+    text-decoration: overline 15% rgba(91, 255, 142, 0.65);
+}
+
+.contactCard.aboutMePage {
+    display: flex;
+    justify-content: space-evenly;
+    width: clamp(100px, 70%, 250px);
+    margin: 0 auto;
+    padding: 5%;
+    height: clamp(100px, 80%, 270px);
 }
 
 .contactCard {
@@ -486,9 +519,41 @@ input::placeholder {
     border-radius: 1rem;
     flex-wrap: nowrap;
 }
-@media screen and (min-width: 800px) {
 
-    #switchOrder {
-        flex-direction: row-reverse;
+@media screen and (min-width: 600px){
+    .aboutMeSection.aboutMePage {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secondDivAboutCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .skillsHeader {
+        margin: 5% 0;
+    }
+
+    .aboutMeMobileCard.aboutMePage {
+        align-items: center;
+        height: 100%;
+        width: 60px;
+    }
+    .contactCard.aboutMePage {
+        flex-direction: column;
+        max-height: none;
+        padding: 3%;
+        height: fit-content;
+    }
+    .languageIconContainer {
+        flex-wrap: wrap;
+        height: fit-content;
+        justify-content: center;
+    }
+    .mobileCardImage {
+        width: clamp(50px, 10vw, 80px);
     }
 }
